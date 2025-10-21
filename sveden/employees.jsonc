@@ -4,20 +4,14 @@
 		"active": "boolean - признак активного педагогического работника (отображается на кафедре)",
 		"imageLink": "text[250] - адрес файла картинки профиля",
 		"fio": "text[250] - фамилия, имя и отчество",
-
 		"degree": "int - * сведения об учёной степени (из реестра https://api.guap.ru/data/RegsAcademicDegrees)",
 		"degree2": "text[250] - учёная степень",
 		"academStat": "int - * сведения об учёном звании (из реестра https://api.guap.ru/data/RegsAcademicRanks)",
 		"academStat2": "text[250] - учёное звание",
-
 		"teachingLevel": "text[250] - уровень образования",
 		"edictaion": [
-			{
-				"qual": "text[250] - квалификация",
-				"spec": "text[250] - наименование направления подготовки и (или) специальности"
-			}
+			"text[400] - специальность или направление подготовки|квалификация"
 		],
-
 		"post": [
 			{
 				"rate": "int - ставка",
@@ -26,20 +20,20 @@
 				"dep2": "text[250] - название подразделения (ручной ввод, если dep=0)"
 			}
 		],
-
 		"teachingDiscipline": [
 			"text[250] - преподаваемая дисциплина"
 		],
 		"teachingProfile": [
 			"int - преподаваемые направленности (профили) подготовки (из реестра https://ais.guap.ru/soft/export/eduplans.json])"
 		],
-
 		"teachingDisciplineIDs": [
 			"int - преподаваемые дисциплины (из реестра https://ais.guap.ru/soft/export/eduplans.json])"
 		],
-
 		"profDevelopment": [
-			"text[250] - повышение квалификации и (или) профессиональная переподготовка"
+			"text[400] - повышение квалификации"
+		],
+		"retrainig": [
+			"text[400] - профессиональная переподготовка"
 		],
 		"genExperience": "text[50] - общий стаж работы",
 		"specExperience": "text[50] - стаж работы по специальности"
