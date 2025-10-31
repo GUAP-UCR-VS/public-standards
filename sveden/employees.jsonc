@@ -16,18 +16,20 @@
 			{
 				"rate": "int - ставка",
 				"title": "text[250] - занимаемая должность",
-				"dep": "int - подразделение (из реестра https://api.guap.ru/data/RegsDeps)",
-				"dep2": "text[250] - название подразделения (ручной ввод, если dep=0)"
+				"chair": "text[50] - указатель на выпускающую кафедру [^base.json/chairs.chair_key]",
+				"department": "text[50] - указатель на выпускающий институт/факультет [^base.json/departments.department_key]",
+				"dep": "int - подразделение (резерв)",
+				"dep2": "text[250] - название подразделения (резерв)"
 			}
 		],
 		"teachingDiscipline": [
 			"text[250] - преподаваемая дисциплина"
 		],
 		"teachingProfile": [
-			"int - преподаваемые направленности (профили) подготовки (из реестра https://ais.guap.ru/soft/export/eduplans.json])"
+			"int - преподаваемые направленности (профили) подготовки [^base.json/profiles.profile_id]"
 		],
 		"teachingDisciplineIDs": [
-			"int - преподаваемые дисциплины (из реестра https://ais.guap.ru/soft/export/eduplans.json])"
+			"int - преподаваемые дисциплины [^eduplans.jsonc/disciplines.discipline_id]"
 		],
 		"profDevelopment": [
 			"text[400] - повышение квалификации"
