@@ -19,6 +19,7 @@
       "level_ptr": "int - указатель на уровень образования [^levels.level_id]",
       "qualification_ptr": "int - указатель на квалификацию [^qualifications.qualification_id]",
       "disabledEdu": "boolean - не отображать направление/специальность",
+      "prepareEdu": "boolean - направление/специальность на лицензировании",
       "code": "text[50] - код",
       "code_old": "text[50] - старый код",
       "title": "text[250] - наименование направления подготовки, профессии, специальности",
